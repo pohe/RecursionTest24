@@ -67,5 +67,48 @@ namespace RecursionTest24
             }
             return 0;
         }
-    } 
+
+
+        public int Factorial(int number)
+        {
+            if(number>=1)
+            {
+                return number * Factorial(number - 1);
+            }
+            return 1;
+        }
+
+        public int FactorialIterativ(int number)
+        {
+            return 0;
+        }
+
+        public int Fibonacci(int n)
+        {
+            if (n < 3)
+            {
+                return 1;
+            }
+            else
+            {
+                return (Fibonacci(n - 1) + Fibonacci(n - 2));
+            }
+        }
+
+        public int FibonacciIterativt(int n)
+        {
+            return 0;
+        }
+
+        public void TowersOfHanoi(string pegA, string pegB, string pegC, int n)
+        {
+            if (n > 0)
+            {
+                TowersOfHanoi(pegA, pegC, pegB, n - 1);
+                Console.WriteLine("Move disk " + n + ": " + pegA + "->" + pegC);
+                TowersOfHanoi(pegB, pegA, pegC, n - 1);
+            }
+        }
+
+    }
 }

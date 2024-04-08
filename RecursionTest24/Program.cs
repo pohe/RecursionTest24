@@ -18,3 +18,9 @@ Console.WriteLine(r.AddNumbersIterativt(3));
 
 Console.WriteLine("AddNumbersRecursive");
 Console.WriteLine(r.AddNumbersRecursive(3));
+
+Console.WriteLine("FactorialRekursivt");
+Console.WriteLine(r.Factorial(5));
+
+Console.WriteLine("Fibonacci");
+Console.WriteLine(r.Fibonacci(9));
