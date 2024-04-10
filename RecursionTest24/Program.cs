@@ -24,3 +24,10 @@ Console.WriteLine(r.Factorial(5));
 
 Console.WriteLine("Fibonacci");
 Console.WriteLine(r.Fibonacci(9));
+
+Console.WriteLine("Towers of Hanoi");
+
+string pegA = "pegA";
+string pegB = "pegB";
+string pegC = "pegC";
+r.TowersOfHanoi(pegA, pegB, pegC, 16);

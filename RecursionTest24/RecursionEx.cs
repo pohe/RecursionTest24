@@ -100,10 +100,13 @@ namespace RecursionTest24
             return 0;
         }
 
+
+        //Flyt et tårn på n skier fra A til C via B
         public void TowersOfHanoi(string pegA, string pegB, string pegC, int n)
         {
             if (n > 0)
             {
+                
                 TowersOfHanoi(pegA, pegC, pegB, n - 1);
                 Console.WriteLine("Move disk " + n + ": " + pegA + "->" + pegC);
                 TowersOfHanoi(pegB, pegA, pegC, n - 1);
